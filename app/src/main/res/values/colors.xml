@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    // Main Color //
+    <color name="dark_green">#2C6E49</color>
+    <color name="light_green">#4C956C</color>
+    <color name="white_cream">#FEFEE3</color>
+    <color name="dark_cream">#D68C45</color>
+    <color name="light_cream">#FFC9B9</color>
+
+    // Resource Color //
+    <color name="blue_link">#2F41E9</color>
 </resources>
