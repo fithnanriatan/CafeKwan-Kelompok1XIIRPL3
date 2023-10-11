@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="398dp"
+        android:layout_height="310dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/logo_cafekwan" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="376dp"
+        android:layout_height="396dp"
+        android:layout_marginStart="216dp"
+        android:background="@drawable/object_circle_green_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-163dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="376dp"
+        android:layout_height="396dp"
+        android:background="@drawable/object_circle_green_dark"
+        tools:layout_editor_absoluteX="-160dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="252dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/object_circle_green_light"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="246dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/object_circle_green_light"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-96dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
