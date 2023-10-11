@@ -3,11 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/kelompok 1/Cafe Kwan - Kelompok 1 XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg.xml" value="0.107" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail1.xml" value="0.107" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail2.xml" value="0.107" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail3.xml" value="0.107" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail4.xml" value="0.107" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail5.xml" value="0.107" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail6.xml" value="0.107" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.107" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_detail_menu.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
