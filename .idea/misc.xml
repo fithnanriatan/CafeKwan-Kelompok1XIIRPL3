@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1815" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login2.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login3.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login4.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1815" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/rectangle_3.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/font/poppins_medium.xml" value="0.234375" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/font/ubuntu_bold.xml" value="0.234375" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/font/ubuntu_medium.xml" value="0.234375" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_pesanan.xml" value="0.20416666666666666" />
         <entry key="..\:/kelompok 1/Cafe Kwan - Kelompok 1 XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
       </map>
     </option>
