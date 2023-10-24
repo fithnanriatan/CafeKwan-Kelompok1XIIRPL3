@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insert_menu">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="-40dp"
+        android:background="@drawable/bg_insert_circle_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="492dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_insert_circle_white"
+        android:elevation="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="292dp"
+            android:layout_height="304dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_insert_circle_white2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="250dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/dark_green"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="nama menu"
+                android:textColor="#2C6E49"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="250dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/dark_green"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="harga menu"
+                android:textColor="#2C6E49"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName7"
+                android:layout_width="250dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/dark_green"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="status menu"
+                android:textColor="#2C6E49"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName8"
+                android:layout_width="250dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/dark_green"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="deskripsi menu"
+                android:textColor="#2C6E49"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Ubah Menu"
+            android:textColor="#2C6E49"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="194dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_insert_circle_green"
+            android:elevation="13dp"
+            android:text="Ubah Produk"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_1327" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="Cafe K.wan"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

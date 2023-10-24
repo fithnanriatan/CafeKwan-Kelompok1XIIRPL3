@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_insert_circle_white.xml" value="0.133" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_insert_circle_white2.xml" value="0.133" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/hhhh.xml" value="0.133" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_insert_menu.xml" value="0.25" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_update_menu.xml" value="0.25" />
         <entry key="..\:/kelompok 1/Cafe Kwan - Kelompok 1 XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
       </map>
     </option>
