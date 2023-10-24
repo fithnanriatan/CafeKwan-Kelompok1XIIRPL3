@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginVertical="12dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_adapter_pesanan_jenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/textView17"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Canting Cap"
+            android:textColor="@color/light_green"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_adapter_pesanan_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_adapter_pesanan_jenis"
+            android:layout_alignTop="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="120000"
+            android:textColor="@color/light_green"
+            android:textSize="16sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_adapter_icon"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_adp_ic"
+            android:elevation="6dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/coffee_1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_adapter_pesanan_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/bg_adapter_icon"
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nama Pesanan"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_adapter_pesanan_kode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adapter_pesanan_nama"
+            android:layout_alignStart="@+id/tv_adapter_pesanan_nama"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="3301"
+            android:textColor="@color/light_green"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg_adapter_icon"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kode order "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Harga "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/textView13"
+            android:fontFamily="@font/poppins_medium"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView17"
+            android:layout_alignTop="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kuantiti "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:layout_alignStart="@+id/textView16"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kuantiti "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_alignTop="@+id/textView16"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_adapter_pesanan_kuantiti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_adapter_pesanan_harga"
+            android:layout_alignTop="@+id/textView16"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="48"
+            android:textColor="@color/light_green"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_adapter_pesanan_kuantiti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_adapter_pesanan_kuantiti"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="48"
+            android:textColor="@color/light_green"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btn_adp_aksi_drop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btn_adp_aksi_edit"
+            android:layout_alignEnd="@+id/btn_adp_aksi_edit"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/btn_adp_pesanan_hapus"
+            app:srcCompat="@drawable/trash"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_adp_aksi_edit"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/btn_adp_pesanan_edit"
+            app:srcCompat="@drawable/pencil"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -4,13 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_adapter_produk_text.xml" value="0.2155" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_adp_ic.xml" value="0.2155" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_adp_produk_img.xml" value="0.1835" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/btn_adp_pesanan_edit.xml" value="0.2165" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/btn_adp_pesanan_hapus.xml" value="0.1825" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.122" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1835" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/object_circle_green_dark.xml" value="0.1835" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/object_circle_green_light.xml" value="0.1835" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/adapter_produk.xml" value="0.22" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/adapter_pesanan.xml" value="0.25" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/adapter_produk.xml" value="0.33" />
       </map>
     </option>
   </component>
