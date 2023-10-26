@@ -4,18 +4,38 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1815" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail1.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail2.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail3.xml" value="0.12" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail4.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail5.xml" value="0.1305" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail6.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_insert_circle_green.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_insert_circle_white.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_insert_circle_white2.xml" value="0.1305" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_pesanan1.xml" value="0.1305" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_pesanan2.xml" value="0.1305" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_pesanan3.xml" value="0.1305" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_pesanan4.xml" value="0.1305" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_pesanan6.xml" value="0.1305" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login.xml" value="0.141" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login2.xml" value="0.141" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login3.xml" value="0.141" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login4.xml" value="0.141" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1815" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/rectangle_3.xml" value="0.141" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/font/poppins_bold.xml" value="0.2203125" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/font/poppins_medium.xml" value="0.234375" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/font/ubuntu_bold.xml" value="0.234375" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/font/ubuntu_medium.xml" value="0.234375" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_dasboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_detail_menu.xml" value="0.19010416666666666" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_insert_menu.xml" value="0.21" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_pesanan.xml" value="0.20416666666666666" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_pesanan.xml" value="0.2" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_produk.xml" value="0.18" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_update_menu.xml" value="0.19010416666666666" />
         <entry key="..\:/kelompok 1/Cafe Kwan - Kelompok 1 XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
       </map>
     </option>
