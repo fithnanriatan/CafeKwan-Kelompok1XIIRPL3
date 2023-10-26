@@ -194,24 +194,13 @@
             android:layout_width="212dp"
             android:layout_height="52dp"
             android:layout_marginEnd="16dp"
+            android:text="buat pesanan"
             android:background="@drawable/bg_detail6"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/produk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_bold"
-            android:text="Buat Pesanan"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="@+id/button"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
-            app:layout_constraintTop_toTopOf="@+id/button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
