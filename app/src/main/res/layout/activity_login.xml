@@ -53,7 +53,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/produk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kwan!"

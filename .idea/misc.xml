@@ -3,18 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_insert_circle_white.xml" value="0.133" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_insert_circle_white2.xml" value="0.133" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bungkus_login.xml" value="0.133" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/hhhh.xml" value="0.133" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_dasboard.xml" value="0.20416666666666666" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_detail_menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_insert_menu.xml" value="0.25" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_pesanan.xml" value="0.20416666666666666" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_update_menu.xml" value="0.25" />
-        <entry key="..\:/kelompok 1/Cafe Kwan - Kelompok 1 XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.184" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_body.xml" value="0.2105" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_hard.xml" value="0.137" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_jumlah_pesanan.xml" value="0.137" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_jumlah_produk.xml" value="0.137" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_nav_list.xml" value="0.134" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_nav_list_select.xml" value="0.134" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_navbar.xml" value="0.137" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_ringkasan_blue.xml" value="0.184" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_ringkasan_jumlahproduk.xml" value="0.134" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_ringkasan_pink.xml" value="0.184" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_template_body.xml" value="0.134" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_template_head.xml" value="0.134" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_total_penghasilan.xml" value="0.137" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_username.xml" value="0.137" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.134" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/lb_template_username.xml" value="0.134" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/navbar.xml" value="0.137" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_dasboard.xml" value="0.25" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_detail_menu.xml" value="0.25" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_insert_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_pesanan.xml" value="0.20416666666666666" />
+        <entry key="..\:/kelompok 1/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_update_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
