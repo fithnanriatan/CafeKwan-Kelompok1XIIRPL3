@@ -14,6 +14,7 @@
     <color name="white_cream">#FEFEE3</color>
     <color name="dark_cream">#D68C45</color>
     <color name="light_cream">#FFC9B9</color>
+    <color name="blur_light">#C8C8C8</color>
 
     // Resource Color //
     <color name="blue_link">#2F41E9</color>

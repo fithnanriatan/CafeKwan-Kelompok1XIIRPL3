@@ -3,7 +3,10 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/inter_bold</item>
         <item>@font/poppins</item>
-        <item>@font/poppins_bold</item>
+        <item>@font/roboto_bold</item>
+        <item>@font/ubuntu</item>
         <item>@font/ubuntu_bold</item>
+        <item>@font/ubuntu_light</item>
+        <item>@font/ubuntu_medium</item>
     </array>
 </resources>
