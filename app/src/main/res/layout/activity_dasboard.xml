@@ -323,7 +323,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/txtWelcome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="26dp"
@@ -341,7 +341,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/txtWelcome"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/profile" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -370,7 +370,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/navbar_produk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_bold"
@@ -384,7 +384,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/navbar_pesanan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_bold"

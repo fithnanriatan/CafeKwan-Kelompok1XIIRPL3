@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/group_1327" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imghapus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -42,7 +42,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -58,9 +58,9 @@
         android:layout_height="wrap_content"
         android:text="Kwan!"
         android:textColor="@color/dark_cream"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toBottomOf="@+id/txtWelcome"
+        app:layout_constraintStart_toEndOf="@+id/txtWelcome"
+        app:layout_constraintTop_toTopOf="@+id/txtWelcome"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
@@ -70,12 +70,12 @@
         android:layout_height="wrap_content"
         android:text="Nikmati pengalaman cafe terbaik bersama kami "
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgkmbli"
         android:layout_width="0dp"
         android:layout_height="480dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,7 +93,7 @@
         android:text="Silakan masuk untuk melanjutkan . . ."
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/log_username"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imgkmbli"
         tools:ignore="MissingConstraints" />
 
     <EditText
