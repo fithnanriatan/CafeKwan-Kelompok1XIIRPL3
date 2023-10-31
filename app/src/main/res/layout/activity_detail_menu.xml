@@ -197,7 +197,6 @@
             android:text="buat pesanan"
             android:background="@drawable/bg_detail6"
             android:textColor="@color/white"
-            android:text="Buat Pesanan"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
