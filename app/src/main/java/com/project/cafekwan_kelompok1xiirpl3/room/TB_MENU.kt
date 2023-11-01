@@ -6,10 +6,11 @@ import androidx.room.PrimaryKey
 
 @Entity (tableName = "MENU")
 data class TB_MENU(
-    @PrimaryKey (autoGenerate = true)
+    @PrimaryKey
     @ColumnInfo (name = "kode_menu")val kode_menu : Int,
     @ColumnInfo (name = "nama_menu")val nama_menu : String,
     @ColumnInfo (name = "harga_menu")val harga_menu : Int,
     @ColumnInfo (name = "status_menu")val status_menu : String,
     @ColumnInfo (name = "terjual_menu")val terjual_menu : Int,
+    @ColumnInfo (name = "deskripsi_menu")val deskripsi_menu : String
 )
