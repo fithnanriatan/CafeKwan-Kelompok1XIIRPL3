@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Handler().postDelayed({
-            startActivity(Intent(this, DasboardActivity::class.java))
+            startActivity(Intent(this, Login::class.java))
             finish()
         }, 2400)
     }

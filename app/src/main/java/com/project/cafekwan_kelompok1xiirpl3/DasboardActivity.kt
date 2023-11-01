@@ -21,7 +21,7 @@ class DasboardActivity : AppCompatActivity() {
         binding.navbarProduk.setOnClickListener{
             startActivity(Intent(this, produk::class.java))
         }
-        binding.navbarPesanan.setOnClickListener{
+        binding.pesanan.setOnClickListener{
             startActivity(Intent(this, pesanan::class.java))
         }
     }

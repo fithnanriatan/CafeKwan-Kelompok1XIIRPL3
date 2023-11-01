@@ -25,7 +25,19 @@ class produk : AppCompatActivity() {
         binding = ActivityProdukBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        adapter = ProdukAdapter(arrayListOf()
+        val username = intent.getStringExtra("username").toString()
+        binding.txtWelcome.text = "$username"
+
+        binding.pesanan.setOnClickListener {
+            Intent(this, pesanan::class.java)
+        }
+
+        binding.dasboard.setOnClickListener {
+            onBackPressed()
+            Intent(this, DasboardActivity::class.java)
+        }
+
+        adapter = ProdukAdapter(arrayListOf(),
         )
         binding.rcProduk.adapter = adapter
         binding.rcProduk.layoutManager = LinearLayoutManager(applicationContext, VERTICAL, false)
@@ -33,10 +45,8 @@ class produk : AppCompatActivity() {
         binding.floatingActionButton2.setOnClickListener {
             startActivity(Intent(this, Insert_menu::class.java))
         }
-        setData()
 
-        val username = intent.getStringExtra("username").toString()
-        binding.txtWelcome.text = "$username"
+
 
     }
 
