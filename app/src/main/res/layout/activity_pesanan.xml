@@ -113,17 +113,21 @@
                     android:id="@+id/produk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginEnd="24dp"
                     android:fontFamily="@font/inter_bold"
                     android:text="Produk"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/constraintLayout7"
+                    app:layout_constraintStart_toEndOf="@+id/dasboard"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="121dp"
                     tools:ignore="MissingConstraints" />
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout7"
                     android:layout_width="92dp"
                     android:layout_height="43dp"
                     android:background="@drawable/navbar"

@@ -76,7 +76,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/tv_kode_produk"
+        android:id="@+id/namamenu"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
         android:layout_marginTop="8dp"
@@ -100,7 +100,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kode_produk" />
+        app:layout_constraintTop_toBottomOf="@+id/namamenu" />
 
     <TextView
         android:id="@+id/tv_status_produk"
@@ -115,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/hargamenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -177,7 +177,7 @@
             app:layout_constraintTop_toTopOf="@+id/btnbuatpesanan">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/jumlah1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-        2        +"
@@ -195,8 +195,8 @@
             android:layout_height="52dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bg_detail6"
-            android:textColor="@color/white"
             android:text="buat pesanan"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -214,7 +214,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/kodemenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="# 3301"

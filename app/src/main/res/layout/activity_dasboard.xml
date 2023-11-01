@@ -400,13 +400,12 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="92dp"
                     android:layout_height="43dp"
-                    android:layout_marginStart="6dp"
                     android:background="@drawable/navbar"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/produk"
                     app:layout_constraintEnd_toStartOf="@+id/produk"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="@+id/produk">
 
                     <TextView
                         android:id="@+id/navbar_dasboard"

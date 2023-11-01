@@ -12,13 +12,14 @@
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/bg_detail6.xml" value="0.107" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.107" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_dasboard.xml" value="0.33" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_detail_menu.xml" value="0.25" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_detail_menu.xml" value="0.34408602150537637" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_insert_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_pesanan.xml" value="0.20416666666666666" />
-        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_produk.xml" value="0.20416666666666666" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_produk.xml" value="0.33" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/activity_update_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/adapter_pesanan.xml" value="0.20416666666666666" />
         <entry key="..\:/CafeKwan-Kelompok1XIIRPL3/app/src/main/res/layout/adapter_produk.xml" value="0.33" />
       </map>
     </option>
