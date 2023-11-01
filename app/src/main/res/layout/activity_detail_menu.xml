@@ -194,13 +194,12 @@
             android:layout_width="212dp"
             android:layout_height="52dp"
             android:layout_marginEnd="16dp"
-            android:text="buat pesanan"
             android:background="@drawable/bg_detail6"
             android:textColor="@color/white"
+            android:text="buat pesanan"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

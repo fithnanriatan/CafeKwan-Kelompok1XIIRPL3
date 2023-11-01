@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database (entities =  [TB_MENU::class,TB_PESANAN::class], version = 1)
+@Database (entities =  [TB_MENU::class,TB_PESANAN::class], version = 2)
 abstract class DB_CAFE : RoomDatabase(){
     abstract fun dao_cafe():DAO_CAFE
 
