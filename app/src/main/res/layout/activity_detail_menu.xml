@@ -172,9 +172,9 @@
             android:layout_height="33dp"
             android:layout_marginEnd="4dp"
             android:background="@drawable/bg_detail5"
-            app:layout_constraintBottom_toBottomOf="@+id/button"
-            app:layout_constraintEnd_toStartOf="@+id/button"
-            app:layout_constraintTop_toTopOf="@+id/button">
+            app:layout_constraintBottom_toBottomOf="@+id/btnbuatpesanan"
+            app:layout_constraintEnd_toStartOf="@+id/btnbuatpesanan"
+            app:layout_constraintTop_toTopOf="@+id/btnbuatpesanan">
 
             <TextView
                 android:id="@+id/textView9"
@@ -190,11 +190,10 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button"
+            android:id="@+id/btnbuatpesanan"
             android:layout_width="212dp"
             android:layout_height="52dp"
             android:layout_marginEnd="16dp"
-            android:text="buat pesanan"
             android:background="@drawable/bg_detail6"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"

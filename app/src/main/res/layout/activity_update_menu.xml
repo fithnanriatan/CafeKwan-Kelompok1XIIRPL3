@@ -43,7 +43,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtWelcome">
 
             <EditText
-                android:id="@+id/txtkodemenu"
+                android:id="@+id/txtnamamenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="16dp"
@@ -57,7 +57,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/txtnamamenu"
+                android:id="@+id/txthargamenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="16dp"
@@ -66,11 +66,11 @@
                 android:inputType="textPersonName"
                 android:hint="harga menu"
                 android:textColor="#2C6E49"
-                app:layout_constraintStart_toStartOf="@+id/txtkodemenu"
-                app:layout_constraintTop_toBottomOf="@+id/txtkodemenu" />
+                app:layout_constraintStart_toStartOf="@+id/txtnamamenu"
+                app:layout_constraintTop_toBottomOf="@+id/txtnamamenu" />
 
             <EditText
-                android:id="@+id/txthrgamenu"
+                android:id="@+id/txtstatusmenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="16dp"
@@ -79,11 +79,11 @@
                 android:inputType="textPersonName"
                 android:hint="status menu"
                 android:textColor="#2C6E49"
-                app:layout_constraintStart_toStartOf="@+id/txtnamamenu"
-                app:layout_constraintTop_toBottomOf="@+id/txtnamamenu" />
+                app:layout_constraintStart_toStartOf="@+id/txthargamenu"
+                app:layout_constraintTop_toBottomOf="@+id/txthargamenu" />
 
             <EditText
-                android:id="@+id/txtsttsmenu"
+                android:id="@+id/txtdeskrpsimenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="16dp"
@@ -92,8 +92,8 @@
                 android:inputType="textPersonName"
                 android:hint="deskripsi menu"
                 android:textColor="#2C6E49"
-                app:layout_constraintStart_toStartOf="@+id/txthrgamenu"
-                app:layout_constraintTop_toBottomOf="@+id/txthrgamenu" />
+                app:layout_constraintStart_toStartOf="@+id/txtstatusmenu"
+                app:layout_constraintTop_toBottomOf="@+id/txtstatusmenu" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
