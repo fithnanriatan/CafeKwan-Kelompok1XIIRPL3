@@ -7,8 +7,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.project.cafekwan_kelompok1xiirpl3.R
 import com.project.cafekwan_kelompok1xiirpl3.produk
+import com.project.cafekwan_kelompok1xiirpl3.room.TB_MENU
 
-class ProdukAdapter(private val list: ArrayList<produk>)
+class ProdukAdapter(private val list: ArrayList<TB_MENU>)
     :RecyclerView.Adapter<ProdukAdapter.ViewHolder>()
 {
     class ViewHolder(view: View)
@@ -37,8 +38,9 @@ class ProdukAdapter(private val list: ArrayList<produk>)
     override fun getItemCount(): Int {
         return list.size
     }
-    fun setData(newList: List<produk>){
+    fun setDataProduk(newList: List<TB_MENU>){
         list.clear()
         list.addAll(newList)
     }
+
 }

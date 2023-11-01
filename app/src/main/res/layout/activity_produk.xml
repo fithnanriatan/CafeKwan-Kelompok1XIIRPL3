@@ -22,7 +22,8 @@
             android:layout_height="543dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/adapter_produk"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton2"
@@ -146,9 +147,11 @@
                     android:layout_height="36dp"
                     android:background="@drawable/navbar"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/pesanan"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dasboard"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="106dp">
+                    tools:ignore="MissingConstraints">
 
                     <TextView
                         android:id="@+id/produk"

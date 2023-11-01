@@ -85,7 +85,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -109,7 +109,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail"
         tools:ignore="MissingConstraints" />
 
     <EditText
