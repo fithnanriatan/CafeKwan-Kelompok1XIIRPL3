@@ -12,5 +12,6 @@ data class TB_PESANAN(
     @ColumnInfo (name = "nama_admin")val nama_admin : String,
     @ColumnInfo (name = "harga_total")val harga_total : Int,
     @ColumnInfo (name = "status_pesanan")val status_pesanan : String,
+    @ColumnInfo (name = "nama_produk")val nama_produk : String
 )
 

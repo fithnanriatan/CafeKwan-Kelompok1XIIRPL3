@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tv_status_produk"
             android:layout_width="142dp"
             android:layout_height="34dp"
             android:layout_marginStart="30dp"
@@ -39,7 +39,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4">
+            app:layout_constraintTop_toBottomOf="@+id/tv_status_produk">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="330dp"
@@ -301,7 +301,7 @@
                 app:srcCompat="@drawable/coffee_1" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/tv_kode_produk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"

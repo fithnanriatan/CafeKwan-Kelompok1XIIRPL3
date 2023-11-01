@@ -16,7 +16,7 @@
         android:background="@color/white">
 
         <TextView
-            android:id="@+id/tv_adapter_pesanan_jenis"
+            android:id="@+id/tv_adapter_pesanan_kode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/textView13"
@@ -26,7 +26,7 @@
             android:layout_marginBottom="0dp"
             android:layout_toEndOf="@+id/textView17"
             android:fontFamily="@font/poppins_medium"
-            android:text="Canting Cap"
+            android:text="1212"
             android:textColor="@color/light_green"
             android:textSize="16sp" />
 
@@ -34,7 +34,7 @@
             android:id="@+id/tv_adapter_pesanan_harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/tv_adapter_pesanan_jenis"
+            android:layout_alignStart="@+id/tv_adapter_pesanan_kode"
             android:layout_alignTop="@+id/textView15"
             android:layout_alignBottom="@+id/textView15"
             android:layout_marginStart="0dp"
@@ -83,7 +83,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/tv_adapter_pesanan_kode"
+            android:id="@+id/tv_adapter_pesanan_jumlah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_adapter_pesanan_nama"
@@ -91,9 +91,9 @@
             android:layout_marginStart="0dp"
             android:layout_marginTop="-6dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="3301"
+            android:text="jumlah"
             android:textColor="@color/light_green"
-            android:textSize="15sp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/textView13"
@@ -161,7 +161,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Kuantiti "
+            android:text="Pembuat"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent" />
@@ -176,7 +176,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="6dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Kuantiti "
+            android:text="Status"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent" />
@@ -212,7 +212,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/tv_adapter_pesanan_kuantiti"
+            android:id="@+id/tv_adapter_pesanan_pembuat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/tv_adapter_pesanan_harga"
@@ -222,22 +222,22 @@
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="48"
+            android:text="sofan"
             android:textColor="@color/light_green"
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/tv_adapter_pesanan_kuantiti2"
+            android:id="@+id/tv_adapter_pesanan_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/tv_adapter_pesanan_kuantiti"
+            android:layout_alignStart="@+id/tv_adapter_pesanan_pembuat"
             android:layout_alignTop="@+id/textView7"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="48"
+            android:text="selesai"
             android:textColor="@color/light_green"
             android:textSize="16sp" />
 
