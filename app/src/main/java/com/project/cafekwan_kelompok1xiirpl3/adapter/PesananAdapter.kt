@@ -13,7 +13,7 @@ import com.project.cafekwan_kelompok1xiirpl3.room.TB_PESANAN
 import com.project.cafekwan_kelompok1xiirpl3.update_menu
 
 class PesananAdapter(private val list: ArrayList<TB_PESANAN>,
-    private val listener: OnAdapterListener):RecyclerView.Adapter<PesananAdapter.ViewHolder>() {
+    private val listener:onClickListener):RecyclerView.Adapter<PesananAdapter.ViewHolder>() {
 
     class ViewHolder(view: View)
         :RecyclerView.ViewHolder(view)
@@ -29,9 +29,7 @@ class PesananAdapter(private val list: ArrayList<TB_PESANAN>,
         val hapus : ImageButton = itemView.findViewById(R.id.btn_adp_aksi_drop)
         }
 
-    interface  OnAdapterListener{
-        fun delete(pesanan: TB_PESANAN)
-    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(
@@ -53,6 +51,10 @@ class PesananAdapter(private val list: ArrayList<TB_PESANAN>,
         holder.hapus.setOnClickListener{
             listener.delete(list[position])
         }
+        holder.ubah.setOnClickListener(){
+            listener.edit(list[position])
+        }
+
 
 
 
@@ -72,5 +74,8 @@ class PesananAdapter(private val list: ArrayList<TB_PESANAN>,
         list.clear()
         list.addAll(newList)
     }
-
+    interface onClickListener{
+        fun delete(tbPesanan: TB_PESANAN)
+        fun edit(tbPesanan: TB_PESANAN)
+    }
     }
