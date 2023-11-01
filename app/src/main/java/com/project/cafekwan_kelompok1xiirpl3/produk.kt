@@ -1,5 +1,6 @@
 package com.project.cafekwan_kelompok1xiirpl3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.project.cafekwan_kelompok1xiirpl3.databinding.ActivityProdukBinding
@@ -13,5 +14,6 @@ class produk : AppCompatActivity() {
 
         val username= intent.getStringExtra("username").toString()
         binding.txtWelcome.text="$username"
+
     }
 }

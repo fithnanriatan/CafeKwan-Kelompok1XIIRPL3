@@ -142,8 +142,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout6"
-                    android:layout_width="92dp"
-                    android:layout_height="43dp"
+                    android:layout_width="88dp"
+                    android:layout_height="36dp"
                     android:background="@drawable/navbar"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent"

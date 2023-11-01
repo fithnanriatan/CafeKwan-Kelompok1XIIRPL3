@@ -19,10 +19,10 @@ class DasboardActivity : AppCompatActivity() {
             startActivity(Intent(this, DasboardActivity::class.java))
         }
         binding.navbarProduk.setOnClickListener{
-            startActivity(Intent(this, DasboardActivity::class.java))
+            startActivity(Intent(this, produk::class.java))
         }
         binding.navbarPesanan.setOnClickListener{
-            startActivity(Intent(this, DasboardActivity::class.java))
+            startActivity(Intent(this, pesanan::class.java))
         }
     }
 }
