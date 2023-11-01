@@ -128,14 +128,13 @@
                     android:id="@+id/pesanan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
                     android:fontFamily="@font/inter_bold"
                     android:text="Pesanan"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@+id/constraintLayout6"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/constraintLayout6"
                     app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
                     tools:ignore="MissingConstraints" />
@@ -146,9 +145,11 @@
                     android:layout_height="36dp"
                     android:background="@drawable/navbar"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="106dp">
+                    tools:ignore="MissingConstraints">
 
                     <TextView
                         android:id="@+id/produk"
@@ -158,11 +159,8 @@
                         android:text="Produk"
                         android:textColor="@color/white"
                         android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.502"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="7dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -176,6 +174,7 @@
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@+id/constraintLayout6"
                     app:layout_constraintEnd_toStartOf="@+id/constraintLayout6"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
                     tools:ignore="MissingConstraints" />
