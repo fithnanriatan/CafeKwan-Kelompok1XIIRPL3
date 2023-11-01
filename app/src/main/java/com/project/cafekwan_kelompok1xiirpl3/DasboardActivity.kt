@@ -15,9 +15,7 @@ class DasboardActivity : AppCompatActivity() {
 
         val username= intent.getStringExtra("username").toString()
         binding.txtWelcome.text="$username"
-        binding.navbarDasboard.setOnClickListener{
-            startActivity(Intent(this, DasboardActivity::class.java))
-        }
+
         binding.navbarProduk.setOnClickListener{
             startActivity(Intent(this, produk::class.java))
         }
