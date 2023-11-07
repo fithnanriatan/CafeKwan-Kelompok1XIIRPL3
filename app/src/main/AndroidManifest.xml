@@ -17,7 +17,19 @@
             android:name=".Login"
             android:exported="true" />
         <activity
+            android:name=".Insert_menu"
+            android:exported="false" />
+        <activity
             android:name=".produk"
+            android:exported="false" />
+        <activity
+            android:name=".pesanan"
+            android:exported="false" />
+        <activity
+            android:name=".DetailMenu"
+            android:exported="false" />
+        <activity
+            android:name=".update_menu"
             android:exported="false" />
         <activity
             android:name=".DasboardActivity"

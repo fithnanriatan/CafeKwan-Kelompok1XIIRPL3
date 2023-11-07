@@ -26,5 +26,11 @@ class pesanan : AppCompatActivity() {
         binding = ActivityPesananBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.produk.setOnClickListener {
+            startActivity(Intent(this, produk::class.java))
+        }
+        binding.dasboard.setOnClickListener {
+            startActivity(Intent(this, DasboardActivity::class.java))
+        }
     }
 }

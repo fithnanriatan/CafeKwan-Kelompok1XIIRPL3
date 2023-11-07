@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.project.cafekwan_kelompok1xiirpl3.DetailMenu
 import com.project.cafekwan_kelompok1xiirpl3.R
@@ -18,11 +19,12 @@ class ProdukAdapter(private val list: ArrayList<TB_MENU>)
     class ViewHolder(view: View)
         :RecyclerView.ViewHolder(view)
     {
-        val kode : TextView = itemView.findViewById(R.id.tv_kode_produk)
+        val kode : TextView = itemView.findViewById(R.id.txt_kode_produk)
         val nama : TextView = itemView.findViewById(R.id.tv_nama_produk)
         val harga : TextView = itemView.findViewById(R.id.tv_harga_produk)
         val status : TextView = itemView.findViewById(R.id.tv_status_produk)
         val btn : TextView =itemView.findViewById(R.id.detail)
+        val detail: CardView=itemView.findViewById(R.id.detailproduk)
 
         }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -35,17 +37,17 @@ class ProdukAdapter(private val list: ArrayList<TB_MENU>)
         )
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.kode.text = list[position].toString()
-        holder.nama.text = list[position].toString()
-        holder.harga.text = list[position].toString()
-        holder.status.text = list[position].toString()
+        holder.kode.text = list[position].kode_menu.toString()
+        holder.nama.text = list[position].nama_menu
+        holder.harga.text = list[position].harga_menu.toString()
+        holder.status.text = list[position].status_menu
 
 
-        holder.btn.setOnClickListener{
-            val Context= holder.itemView.context
+        holder.detail.setOnClickListener{
+            val context= holder.itemView.context
             val intent =
-            Intent(Context, DetailMenu::class.java).putExtra("Idmenu", list[position].kode_menu.toString())
-            Context.startActivity(intent)
+            Intent(context, DetailMenu::class.java).putExtra("Idmenu", list[position].kode_menu.toString())
+            context.startActivity(intent)
         }
     }
     override fun getItemCount(): Int {

@@ -24,6 +24,12 @@ class Login : AppCompatActivity() {
         binding.btnLogin.setOnClickListener{
            if (username.text.isNotEmpty() && password.text.isNotEmpty()){
                if (password.text.length >=9){
+                   startActivity(Intent(this, produk::class.java)
+                       .putExtra("username",username.text.toString())
+                   )
+                   startActivity(Intent(this, pesanan::class.java)
+                       .putExtra("username",username.text.toString())
+                   )
                    startActivity(Intent(this, DasboardActivity::class.java)
                        .putExtra("username",username.text.toString())
                    )

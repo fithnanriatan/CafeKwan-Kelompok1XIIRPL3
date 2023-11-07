@@ -82,7 +82,7 @@
                 app:layout_constraintStart_toStartOf="@+id/txtnamamenu"
                 app:layout_constraintTop_toBottomOf="@+id/txtnamamenu" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/txtsttsmenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"

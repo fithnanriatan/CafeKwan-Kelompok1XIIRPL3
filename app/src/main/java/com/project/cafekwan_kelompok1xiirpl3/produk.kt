@@ -29,7 +29,7 @@ class produk : AppCompatActivity() {
         binding.txtWelcome.text = "$username"
 
         binding.pesanan.setOnClickListener {
-            Intent(this, pesanan::class.java)
+            startActivity(Intent(this, pesanan::class.java))
         }
 
         binding.dasboard.setOnClickListener {
@@ -59,10 +59,11 @@ class produk : AppCompatActivity() {
         binding.rcProduk.layoutManager = LinearLayoutManager(this)
         CoroutineScope(Dispatchers.IO).launch {
             val data = db.dao_cafe().getAllData()
-            adapter.setDataProduk(data)
+            adapter.setData(data)
             withContext(Dispatchers.Main) {
                 adapter.notifyDataSetChanged()
             }
         }
+        binding.rcProduk.adapter=adapter
     }
 }
