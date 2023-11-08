@@ -27,10 +27,19 @@ class pesanan : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.produk.setOnClickListener {
-            startActivity(Intent(this, produk::class.java))
+            startActivity(Intent(this, produk::class.java)
+               .putExtra("username",username.text.toString())
+           )
         }
         binding.dasboard.setOnClickListener {
-            startActivity(Intent(this, DasboardActivity::class.java))
+            onBackToDashboard()
         }
+    }
+
+    fun onBackToDashboard() {
+        val intent = Intent()
+        intent.putExtra("username", username.text.toString())
+        setResult(Activity.RESULT_OK, intent)
+        finish()
     }
 }
