@@ -13,14 +13,20 @@ class DasboardActivity : AppCompatActivity() {
         binding = ActivityDasboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username= intent.getStringExtra("username").toString()
-        binding.txtWelcome.text="$username"
+        val username = intent.getStringExtra("username")
 
-        binding.navbarProduk.setOnClickListener{
-            startActivity(Intent(this, produk::class.java).putExtra("username",username.text.toString()))
+        binding.txtWelcome.text = username
+        
+        binding.navbarProduk.setOnClickListener {
+            val intent = Intent(this, produk::class.java)
+            intent.putExtra("username", username)
+            startActivity(intent)
         }
+
         binding.pesanan.setOnClickListener{
-            startActivity(Intent(this, pesanan::class.java).putExtra("username",username.text.toString()))
+            val intent = Intent(this, pesanan::class.java)
+            intent.putExtra("username", username)
+            startActivity(intent)
         }
     }
 }
