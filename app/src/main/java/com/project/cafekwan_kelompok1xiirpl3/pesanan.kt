@@ -31,6 +31,7 @@ class pesanan : AppCompatActivity() {
         binding.txtWelcome.text = username
         
         binding.produk.setOnClickListener {
+            onBackPressed()
             startActivity(Intent(this, produk::class.java)
                .putExtra("username",username)
            )
