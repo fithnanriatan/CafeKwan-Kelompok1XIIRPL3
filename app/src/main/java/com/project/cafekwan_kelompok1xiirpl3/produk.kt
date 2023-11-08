@@ -25,16 +25,19 @@ class produk : AppCompatActivity() {
         binding = ActivityProdukBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username = intent.getStringExtra("username").toString()
-        binding.txtWelcome.text = "$username"
+        val username = intent.getStringExtra("username")
+        binding.txtWelcome.text = username
 
         binding.pesanan.setOnClickListener {
-            startActivity(Intent(this, pesanan::class.java))
+            onBackPressed()
+            startActivity(Intent(this, pesanan::class.java).putExtra("username",username))
         }
 
         binding.dasboard.setOnClickListener {
-            onBackPressed()
-            Intent(this, DasboardActivity::class.java)
+            val intent = Intent()
+            intent.putExtra("username", username)
+            setResult(Activity.RESULT_OK, intent)
+            finish()
         }
 
         adapter = ProdukAdapter(arrayListOf(),
@@ -45,8 +48,6 @@ class produk : AppCompatActivity() {
         binding.floatingActionButton2.setOnClickListener {
             startActivity(Intent(this, Insert_menu::class.java))
         }
-
-
 
     }
 
