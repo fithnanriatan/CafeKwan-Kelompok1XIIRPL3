@@ -26,20 +26,21 @@ class pesanan : AppCompatActivity() {
         binding = ActivityPesananBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val username = intent.getStringExtra("username")
+
+        binding.txtWelcome.text = username
+        
         binding.produk.setOnClickListener {
             startActivity(Intent(this, produk::class.java)
-               .putExtra("username",username.text.toString())
+               .putExtra("username",username)
            )
         }
         binding.dasboard.setOnClickListener {
-            onBackToDashboard()
+            val intent = Intent()
+            intent.putExtra("username", username)
+            setResult(Activity.RESULT_OK, intent)
+            finish()
         }
     }
 
-    fun onBackToDashboard() {
-        val intent = Intent()
-        intent.putExtra("username", username.text.toString())
-        setResult(Activity.RESULT_OK, intent)
-        finish()
-    }
 }
