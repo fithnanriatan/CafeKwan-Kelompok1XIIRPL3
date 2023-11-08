@@ -17,10 +17,10 @@ class DasboardActivity : AppCompatActivity() {
         binding.txtWelcome.text="$username"
 
         binding.navbarProduk.setOnClickListener{
-            startActivity(Intent(this, produk::class.java))
+            startActivity(Intent(this, produk::class.java).putExtra("username",username.text.toString()))
         }
         binding.pesanan.setOnClickListener{
-            startActivity(Intent(this, pesanan::class.java))
+            startActivity(Intent(this, pesanan::class.java).putExtra("username",username.text.toString()))
         }
     }
 }
