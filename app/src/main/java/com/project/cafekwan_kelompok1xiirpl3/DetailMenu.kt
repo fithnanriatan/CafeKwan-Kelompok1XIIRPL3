@@ -46,36 +46,39 @@ class DetailMenu : AppCompatActivity() {
         val id = intent.getStringExtra("Idmenu").toString().toInt()
         val data = db.dao_cafe().getID(id)[0]
 
+        // Mengambil username dari Shared Preferences
+        val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        val username = sharedPreferences.getString("username", "")
+
         //Tampil Detail
         binding.kodemenu.setText(data.kode_menu.toString())
         binding.namamenu.setText(data.nama_menu)
         binding.hargamenu.setText(data.harga_menu.toString())
-        binding.navbarPesanan.setText(data.status_menu)//namaAdmin
-        binding.tvStatusProduk.setText(data.deskripsi_menu)
+        binding.statusmenu.setText(data.status_menu)
+        binding.descmenu.setText(data.deskripsi_menu) 
 
-
-       //Buat Pesanan
+        //Buat Pesanan
+        val harga_total = binding.hargamenu.text.toString().toInt() * binding.jumlah.text.toString().toInt()
         binding.btnBuatPesanan.setOnClickListener {
             db.dao_cafe().insertdata(
                 TB_PESANAN(
-                    binding.kodemenu.text.toString().toInt(),
+                    0,
                     binding.jumlah.text.toString().toInt(),
-                    binding.tvStatusProduk.text.toString(),
-                    binding.hargamenu.text.toString().toInt(),
-                    binding.navbarPesanan.text.toString(),
-                    binding.namamenu.text.toString()
+                    username,
+                    harga_total,
+                    'diproses',
+                    data.nama_menu
                 )
             )
-            startActivity(
-                Intent(
-                    this, pesanan::class.java
-                )
-            )
-            Toast.makeText(applicationContext,"pesanan sedang diproses",
-                Toast.LENGTH_SHORT).show()
+            onBackPressed()
+            Toast.makeText(
+                applicationContext,
+                "pesanan sedang diproses",
+                Toast.LENGTH_SHORT
+            ).show()
         }
         binding.backPesanan.setOnClickListener{
-            startActivity(Intent(this,produk::class.java))
+            onBackPressed()
         }
     }
 
