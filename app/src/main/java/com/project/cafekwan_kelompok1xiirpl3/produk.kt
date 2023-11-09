@@ -26,19 +26,19 @@ class produk : AppCompatActivity() {
         binding = ActivityProdukBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username = intent.getStringExtra("username")
+        // Mengambil username dari Shared Preferences
+        val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        val username = sharedPreferences.getString("username", "")
+        
         binding.txtWelcome.text = username
 
         binding.pesanan.setOnClickListener {
             onBackPressed()
-            startActivity(Intent(this, pesanan::class.java).putExtra("username",username))
+            startActivity(Intent(this, pesanan::class.java))
         }
 
         binding.dasboard.setOnClickListener {
-            val intent = Intent()
-            intent.putExtra("username", username)
-            setResult(Activity.RESULT_OK, intent)
-            finish()
+            onBackPressed()
         }
 
         adapter = ProdukAdapter(arrayListOf(),
