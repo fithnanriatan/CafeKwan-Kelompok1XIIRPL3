@@ -24,7 +24,7 @@ class Login : AppCompatActivity() {
         binding.btnLogin.setOnClickListener{
            if (username.text.isNotEmpty() && password.text.isNotEmpty()){
                if (password.text.length >=9){
-                   startActivity(Intent(this, DasboardActivity::class.java)
+                   startActivity(Intent(this,DasboardActivity::class.java)
                        .putExtra("username",username.text.toString())
                    )
                    alert("selamat datang dicafe kwan ${username.text}")

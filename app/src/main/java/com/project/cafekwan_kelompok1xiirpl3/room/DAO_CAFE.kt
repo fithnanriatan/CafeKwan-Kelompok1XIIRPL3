@@ -7,7 +7,7 @@ interface DAO_CAFE {
     @Insert
     fun InserData(vararg tbMenu: TB_MENU)
     @Delete
-    fun DeleteData(vararg tbMenu: TB_MENU)
+    fun DeleteDataM(vararg tbMenu: TB_MENU)
     @Update
     fun UpdateData(vararg tbMenu: TB_MENU)
     @Query ("SELECT * FROM MENU")
@@ -25,6 +25,6 @@ interface DAO_CAFE {
     @Query ("SELECT * FROM PESANAN")
     fun getData() : List<TB_PESANAN>
     @Query ("SELECT * FROM PESANAN WHERE kode_pesanan=:id")
-    fun getKODE(id:Int): List<TB_PESANAN>
+    fun getKODE(id: Int): List<TB_PESANAN>
 
 }

@@ -12,8 +12,7 @@ import com.project.cafekwan_kelompok1xiirpl3.pesanan
 import com.project.cafekwan_kelompok1xiirpl3.room.TB_PESANAN
 import com.project.cafekwan_kelompok1xiirpl3.update_menu
 
-class PesananAdapter(private val list: ArrayList<TB_PESANAN>,
-    private val listener:onClickListener):RecyclerView.Adapter<PesananAdapter.ViewHolder>() {
+class PesananAdapter(private val list: ArrayList<TB_PESANAN>, private val listener:onClickListener):RecyclerView.Adapter<PesananAdapter.ViewHolder>() {
 
     class ViewHolder(view: View)
         :RecyclerView.ViewHolder(view)
@@ -43,7 +42,7 @@ class PesananAdapter(private val list: ArrayList<TB_PESANAN>,
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.kode.text  = list[position].kode_pesanan.toString()
         holder.nama.text = list[position].nama_produk
-        holder.jumlah.text = list[position].kode_menu.toString()
+        holder.jumlah.text = list[position].jumlah_menu.toString()
         holder.harga.text = list[position].harga_total.toString()
         holder.pembuat.text = list[position].nama_admin
         holder.status.text = list[position].status_pesanan
@@ -70,12 +69,13 @@ class PesananAdapter(private val list: ArrayList<TB_PESANAN>,
     override fun getItemCount(): Int {
         return list.size
     }
-    fun setData(newList: List<TB_PESANAN>){
+    fun setDataPsnan(newList: List<TB_PESANAN>){
         list.clear()
         list.addAll(newList)
     }
     interface onClickListener{
         fun delete(tbPesanan: TB_PESANAN)
         fun edit(tbPesanan: TB_PESANAN)
+        fun insert(tbPesanan: TB_PESANAN)
     }
     }

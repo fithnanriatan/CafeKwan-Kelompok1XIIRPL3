@@ -17,9 +17,10 @@ class update_menu : AppCompatActivity() {
         binding = ActivityUpdateMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val id = intent.getStringExtra("idpesanan").toString().toInt()
+        val id = intent.getStringExtra("kode menu").toString().toInt()
         val data = db.dao_cafe().getID(id)
 
+        0
         binding.txtnamamenu.setText(data[0].nama_menu)
         binding.txthargamenu.setText(data[0].harga_menu.toString())
         binding.txtstatusmenu.setText(data[0].status_menu)
