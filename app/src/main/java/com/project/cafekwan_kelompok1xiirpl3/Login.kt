@@ -18,19 +18,24 @@ class Login : AppCompatActivity() {
         setContentView(binding.root)
 
         database = DB_CAFE.getInstance(applicationContext)
-        val username =binding.logUsername
-        val password =binding.logPasword
+        val username = binding.logUsername
+        val password = binding.logPasword
         val pw = binding.logPasword.text.split("\\s+".toRegex())
+        
         binding.btnLogin.setOnClickListener{
            if (username.text.isNotEmpty() && password.text.isNotEmpty()){
-               if (password.text.length >=9){
-                   startActivity(Intent(this,DasboardActivity::class.java)
-                       .putExtra("username",username.text.toString())
-                   )
+               if (password.text.length >= 8){
+                   // menyimpan username ke Shared Preferences
+                   val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+                   val editor = sharedPreferences.edit()
+                   editor.putString("username", username)
+                   editor.apply()
+                   
+                   startActivity(Intent(this,DasboardActivity::class.java))
                    alert("selamat datang dicafe kwan ${username.text}")
                    finish()
                }else{
-                   alert("password minimal 9 huruf")
+                   alert("password minimal 8 huruf")
                }
            }else{
                alert("username dan password tidak boleh kosong!")
