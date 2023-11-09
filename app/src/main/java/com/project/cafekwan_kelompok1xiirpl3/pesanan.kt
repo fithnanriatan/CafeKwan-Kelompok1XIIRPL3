@@ -50,21 +50,18 @@ class pesanan : AppCompatActivity() {
             LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL,false)
         binding.rcPesanan.addItemDecoration(DividerItemDecoration(applicationContext, LinearLayoutManager.VERTICAL))
 
-        val username = intent.getStringExtra("username")
+        // Mengambil username dari Shared Preferences
+        val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        val username = sharedPreferences.getString("username", "")
 
         binding.txtWelcome.text = username
         
         binding.produk.setOnClickListener {
             onBackPressed()
-            startActivity(Intent(this, produk::class.java)
-               .putExtra("username",username)
-           )
+            startActivity(Intent(this, produk::class.java))
         }
         binding.dasboard.setOnClickListener {
-            val intent = Intent()
-            intent.putExtra("username", username)
-            setResult(Activity.RESULT_OK, intent)
-            finish()
+            onBackPressed()
         }
     }
 
