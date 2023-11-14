@@ -94,7 +94,7 @@ class pesanan : AppCompatActivity() {
             setNegativeButton("batal") { dilogInterface: DialogInterface, i: Int ->
                 dilogInterface.dismiss()
             }
-            setPositiveButton("hapus") { dialogInterface: DialogInterface, i: Int ->
+            setPositiveButton("selesai") { dialogInterface: DialogInterface, i: Int ->
                 dialogInterface.dismiss()
 
                 CoroutineScope(Dispatchers.IO).launch {
