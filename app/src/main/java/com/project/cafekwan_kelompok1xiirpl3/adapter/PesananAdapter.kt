@@ -53,18 +53,6 @@ class PesananAdapter(private val list: ArrayList<TB_PESANAN>, private val listen
         holder.ubah.setOnClickListener{
             listener.edit(list[position])
         }
-
-
-
-
-        holder.ubah.setOnClickListener{
-            val context = holder.itemView.context // this
-            context.startActivity(
-                Intent(context, update_menu::class.java)
-                    .putExtra("kodePesanan", holder.kode.text)
-            )
-        }
-
     }
     override fun getItemCount(): Int {
         return list.size
