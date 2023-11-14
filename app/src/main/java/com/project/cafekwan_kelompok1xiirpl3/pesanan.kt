@@ -38,7 +38,7 @@ class pesanan : AppCompatActivity() {
                 }
 
                 override fun edit(tbPesanan: TB_PESANAN) {
-                    TODO("Not yet implemented")
+                    ubhPsn(tbPesanan)
                 }
 
                 override fun insert(tbPesanan: TB_PESANAN) {
@@ -79,9 +79,28 @@ class pesanan : AppCompatActivity() {
 
                 CoroutineScope(Dispatchers.IO).launch {
                     db.dao_cafe().DeleteData(tbPesanan)
-                    finish()
-                    startActivity(intent)
+                    recreate()
                 }
+            }
+            dialog.show()
+        }
+    }
+
+     private fun ubhPsn(tbPesanan: TB_PESANAN) {
+        val dialog = AlertDialog.Builder(this)
+        dialog.apply {
+            setTitle("Konfirmasi pesanan selesai")
+            setMessage("apakah pesanan ${tbPesanan.nama_produk}? sudah selesai?")
+            setNegativeButton("batal") { dilogInterface: DialogInterface, i: Int ->
+                dilogInterface.dismiss()
+            }
+            setPositiveButton("hapus") { dialogInterface: DialogInterface, i: Int ->
+                dialogInterface.dismiss()
+
+                CoroutineScope(Dispatchers.IO).launch {
+                    db.dao_cafe().updPsnSelesai(tbPesanan.kode_pesanan)
+                }
+                    recreate()
             }
             dialog.show()
         }
