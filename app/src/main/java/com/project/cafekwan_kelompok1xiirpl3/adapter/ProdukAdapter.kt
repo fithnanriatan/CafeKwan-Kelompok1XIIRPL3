@@ -23,7 +23,6 @@ class ProdukAdapter(private val list: ArrayList<TB_MENU>)
         val nama : TextView = itemView.findViewById(R.id.tv_nama_produk)
         val harga : TextView = itemView.findViewById(R.id.tv_harga_produk)
         val status : TextView = itemView.findViewById(R.id.tv_status_produk)
-        val btn : TextView =itemView.findViewById(R.id.detail)
         val detail: CardView=itemView.findViewById(R.id.detailproduk)
 
         }
