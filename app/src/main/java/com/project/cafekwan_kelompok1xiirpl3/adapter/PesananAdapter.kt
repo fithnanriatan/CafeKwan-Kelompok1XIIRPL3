@@ -50,7 +50,7 @@ class PesananAdapter(private val list: ArrayList<TB_PESANAN>, private val listen
         holder.hapus.setOnClickListener{
             listener.delete(list[position])
         }
-        holder.ubah.setOnClickListener(){
+        holder.ubah.setOnClickListener{
             listener.edit(list[position])
         }
 
