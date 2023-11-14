@@ -167,7 +167,7 @@
                 android:layout_marginBottom="6dp"
                 android:background="@color/white"
                 android:ems="10"
-                android:hint="0"
+                android:text="1"
                 android:inputType="number"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
