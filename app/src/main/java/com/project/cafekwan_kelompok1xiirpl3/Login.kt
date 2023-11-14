@@ -29,7 +29,7 @@ class Login : AppCompatActivity() {
                    // menyimpan username ke Shared Preferences
                    val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
                    val editor = sharedPreferences.edit()
-                   editor.putString("username", username.toString())
+                   editor.putString("username", username.text.toString())
                    editor.apply()
                    
                    startActivity(Intent(this,DasboardActivity::class.java))
