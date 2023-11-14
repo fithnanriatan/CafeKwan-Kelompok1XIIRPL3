@@ -1,12 +1,18 @@
 package com.project.cafekwan_kelompok1xiirpl3
 
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import cn.pedant.SweetAlert.SweetAlertDialog
+import com.project.cafekwan_kelompok1xiirpl3.adapter.PesananAdapter
 import com.project.cafekwan_kelompok1xiirpl3.databinding.ActivityDetailMenuBinding
 import com.project.cafekwan_kelompok1xiirpl3.room.DB_CAFE
 import com.project.cafekwan_kelompok1xiirpl3.room.TB_MENU
@@ -17,6 +23,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class DetailMenu : AppCompatActivity() {
+
+    private lateinit var hrgMenu : TextView
+    private lateinit var jmlhPsn : EditText
+    private lateinit var kali : Button
+
     private lateinit var binding: ActivityDetailMenuBinding
     private val db by lazy { DB_CAFE.getInstance(this) }
 
@@ -25,23 +36,10 @@ class DetailMenu : AppCompatActivity() {
         binding= ActivityDetailMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        binding.imageView2.setOnClickListener{
-//            editData(TB_MENU(0,"",0,"",0,""))
-//        }
+        hrgMenu = findViewById(R.id.hargamenu)
+        jmlhPsn = findViewById(R.id.jumlah)
+        kali = findViewById(R.id.btn_buatPesanan)
 
-        //Hapus Menu
-       binding.imageView3.setOnClickListener{
-           db.dao_cafe().DeleteDataM(
-               TB_MENU(
-                   binding.kodemenu.text.toString().toInt(),
-                   binding.namamenu.text.toString(),
-                   binding.hargamenu.text.toString().toInt(),
-                   binding.tvStatusProduk.text.toString(),
-                   binding.jumlah.text.toString().toInt(),
-                   binding.navbarPesanan.text.toString()
-               )
-           )
-        }
 
         val id = intent.getStringExtra("Idmenu").toString().toInt()
         val data = db.dao_cafe().getID(id)[0]
@@ -58,19 +56,20 @@ class DetailMenu : AppCompatActivity() {
         binding.descmenu.setText(data.deskripsi_menu) 
 
         //Buat Pesanan
-        val harga_total = binding.hargamenu.text.toString().toInt() * binding.jumlah.text.toString().toInt()
+        var harga_total = binding.hargamenu.text.toString().toInt() * 2
         binding.btnBuatPesanan.setOnClickListener {
             db.dao_cafe().insertdata(
                 TB_PESANAN(
                     0,
-                    binding.jumlah.text.toString().toInt(),
-                    username,
+                    3,
+                    username.toString(),
                     harga_total,
-                    'diproses',
+                    "diproses",
                     data.nama_menu
                 )
             )
             onBackPressed()
+            startActivity(Intent(this,pesanan::class.java))
             Toast.makeText(
                 applicationContext,
                 "pesanan sedang diproses",
@@ -84,7 +83,7 @@ class DetailMenu : AppCompatActivity() {
 
     //Alert hps menu
     private fun delete (tbMenu: TB_MENU){
-        val dialog = AlertDialog.Builder(this)
+        val dialog = AlertDialog.Builder(this, SweetAlertDialog.WARNING_TYPE)
         dialog.apply {
             setTitle("Konfirmasi hapus data")
             setMessage("apakah anda yakin akan menghapus data ini?")
@@ -107,6 +106,11 @@ class DetailMenu : AppCompatActivity() {
     private fun editData(tbMenu: TB_MENU){
         startActivity(Intent(this,update_menu::class.java)
             .putExtra("kode menu",tbMenu.kode_menu.toString()))
+    }
+
+    fun ttlHrg(view: View) {
+        val hitung = jmlhPsn.text.toString().toDouble() * hrgMenu.text.toString().toDouble()
+        hrgMenu.text = hitung.toString()
     }
 
 }

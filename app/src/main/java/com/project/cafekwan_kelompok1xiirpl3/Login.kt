@@ -1,5 +1,6 @@
 package com.project.cafekwan_kelompok1xiirpl3
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -28,7 +29,7 @@ class Login : AppCompatActivity() {
                    // menyimpan username ke Shared Preferences
                    val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
                    val editor = sharedPreferences.edit()
-                   editor.putString("username", username)
+                   editor.putString("username", username.toString())
                    editor.apply()
                    
                    startActivity(Intent(this,DasboardActivity::class.java))
