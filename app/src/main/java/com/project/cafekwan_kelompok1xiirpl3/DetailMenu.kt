@@ -57,13 +57,13 @@ class DetailMenu : AppCompatActivity() {
 
         //Buat Pesanan
         binding.btnBuatPesanan.setOnClickListener {
-        val jmlMenu = binding.jumlah.text.toString.toInt()
+        val jmlMenu = binding.jumlah.text.toString().toInt()
         val harga_total = data.harga_menu * jmlMenu
             db.dao_cafe().insertdata(
                 TB_PESANAN(
                     0,
                     jmlMenu,
-                    username,
+                    username.toString(),
                     harga_total,
                     "diproses",
                     data.nama_menu
