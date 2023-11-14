@@ -26,5 +26,7 @@ interface DAO_CAFE {
     fun getData() : List<TB_PESANAN>
     @Query ("SELECT * FROM PESANAN WHERE kode_pesanan=:id")
     fun getKODE(id: Int): List<TB_PESANAN>
+    @Query ("UPDATE PESANAN SET status_pesanan = 'selesai' WHERE kode_pesanan = :id")
+    fun updPsnSelesai(id: Int)
 
 }
