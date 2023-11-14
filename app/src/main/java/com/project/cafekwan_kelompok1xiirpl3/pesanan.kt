@@ -79,8 +79,8 @@ class pesanan : AppCompatActivity() {
 
                 CoroutineScope(Dispatchers.IO).launch {
                     db.dao_cafe().DeleteData(tbPesanan)
-                    recreate()
                 }
+                    recreate()
             }
             dialog.show()
         }
