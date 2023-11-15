@@ -89,11 +89,12 @@
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/dark_green"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="status menu"
+                android:inputType="textPersonName"
                 android:textColor="#2C6E49"
                 app:layout_constraintStart_toStartOf="@+id/txthrgamenu"
-                app:layout_constraintTop_toBottomOf="@+id/txthrgamenu" />
+                app:layout_constraintTop_toBottomOf="@+id/txthrgamenu"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/txtdskpsimenu"

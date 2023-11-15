@@ -5,6 +5,8 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -12,9 +14,10 @@ import com.project.cafekwan_kelompok1xiirpl3.DetailMenu
 import com.project.cafekwan_kelompok1xiirpl3.R
 import com.project.cafekwan_kelompok1xiirpl3.produk
 import com.project.cafekwan_kelompok1xiirpl3.room.TB_MENU
+import com.project.cafekwan_kelompok1xiirpl3.room.TB_PESANAN
+import com.project.cafekwan_kelompok1xiirpl3.update_menu
 
-class ProdukAdapter(private val list: ArrayList<TB_MENU>)
-    :RecyclerView.Adapter<ProdukAdapter.ViewHolder>()
+class ProdukAdapter(private val list: ArrayList<TB_MENU>,private val listener:onClickListenerProduk) :RecyclerView.Adapter<ProdukAdapter.ViewHolder>()
 {
     class ViewHolder(view: View)
         :RecyclerView.ViewHolder(view)
@@ -24,6 +27,9 @@ class ProdukAdapter(private val list: ArrayList<TB_MENU>)
         val harga : TextView = itemView.findViewById(R.id.tv_harga_produk)
         val status : TextView = itemView.findViewById(R.id.tv_status_produk)
         val detail: CardView=itemView.findViewById(R.id.detailproduk)
+
+        val ubahpsnan : ImageView = itemView.findViewById(R.id.imgEditPsnan)
+        val hapuspsnan : ImageView = itemView.findViewById(R.id.imgHpsPsnan)
 
         }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -42,6 +48,16 @@ class ProdukAdapter(private val list: ArrayList<TB_MENU>)
         holder.status.text = list[position].status_menu
 
 
+        holder.ubahpsnan.setOnClickListener{
+            val context = holder.itemView.context
+            context.startActivity(
+                Intent(context,update_menu::class.java)
+                    .putExtra("kode menu",holder.kode.text)
+            )
+        }
+        holder.hapuspsnan.setOnClickListener(){
+            listener.deleteProduk(list[position])
+        }
         holder.detail.setOnClickListener{
             val context= holder.itemView.context
             val intent =
@@ -56,6 +72,9 @@ class ProdukAdapter(private val list: ArrayList<TB_MENU>)
         list.clear()
         list.addAll(newList)
     }
-
+    interface onClickListenerProduk {
+        fun deleteProduk(tbMenu: TB_MENU)
+        fun updateProduk(tbMenu: TB_MENU)
+    }
 
 }

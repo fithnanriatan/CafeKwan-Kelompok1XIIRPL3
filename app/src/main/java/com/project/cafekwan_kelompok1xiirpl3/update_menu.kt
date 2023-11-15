@@ -17,33 +17,38 @@ class update_menu : AppCompatActivity() {
         binding = ActivityUpdateMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.backUpdatemenu.setOnClickListener{
+            onBackPressed()
+        }
         val id = intent.getStringExtra("kode menu").toString().toInt()
         val data = db.dao_cafe().getID(id)
 
         0
-        binding.txtnamamenu.setText(data[0].nama_menu)
-        binding.txthargamenu.setText(data[0].harga_menu.toString())
-        binding.txtstatusmenu.setText(data[0].status_menu)
-        binding.txtdeskrpsimenu.setText(data[0].deskripsi_menu)
+        binding.Edtnamamenu.setText(data[0].nama_menu)
+        binding.Edthargamenu.setText(data[0].harga_menu.toString())
+        binding.Edtstatusmenu.setText(data[0].status_menu)
+        binding.Edtdeskrpsimenu.setText(data[0].deskripsi_menu)
 
         binding.btnUbahProduk.setOnClickListener{
-            if (binding.txtnamamenu.text.isNotEmpty()&&
-                    binding.txthargamenu.text.isNotEmpty()&&
-                    binding.txtstatusmenu.text.isNotEmpty()&&
-                    binding.txtdeskrpsimenu.text.isNotEmpty()){
+            if (binding.Edtnamamenu.text.isNotEmpty()&&
+                    binding.Edthargamenu.text.isNotEmpty()&&
+                    binding.Edtstatusmenu.text.isNotEmpty()&&
+                    binding.Edtdeskrpsimenu.text.isNotEmpty()){
 
-                db.dao_cafe().UpdateData(TB_MENU(
+                // update menu
+                db.dao_cafe().UpdateDatam(TB_MENU(
                     0,
-                    binding.txtnamamenu.text.toString(),
-                    binding.txthargamenu.text.toString().toInt(),
-                    binding.txtstatusmenu.text.toString(),
+                    binding.Edtnamamenu.text.toString(),
+                    binding.Edthargamenu.text.toString().toInt(),
+                    binding.Edtstatusmenu.text.toString(),
                     0,
-                    binding.txtdeskrpsimenu.text.toString()
+                    binding.Edtdeskrpsimenu.text.toString()
                 ))
-                Toast.makeText(applicationContext,"Data berhasil diubah", Toast.LENGTH_SHORT).show()
-                onBackPressed()
                 startActivity(
-                    Intent(this,MainActivity::class.java))
+                    Intent(this,produk::class.java))
+                Toast.makeText(applicationContext,"Data berhasil diubah", Toast.LENGTH_SHORT).show()
+
+
             } else{
                 Toast.makeText(applicationContext, "ubah data terlebih dahulu", Toast.LENGTH_SHORT).show()
             }

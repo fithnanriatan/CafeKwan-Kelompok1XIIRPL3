@@ -2,15 +2,19 @@ package com.project.cafekwan_kelompok1xiirpl3
 
 import android.app.Activity
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
 import com.project.cafekwan_kelompok1xiirpl3.adapter.ProdukAdapter
 import com.project.cafekwan_kelompok1xiirpl3.databinding.ActivityProdukBinding
 import com.project.cafekwan_kelompok1xiirpl3.room.DB_CAFE
+import com.project.cafekwan_kelompok1xiirpl3.room.TB_MENU
+import com.project.cafekwan_kelompok1xiirpl3.room.TB_PESANAN
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -43,6 +47,15 @@ class produk : AppCompatActivity() {
         }
 
         adapter = ProdukAdapter(arrayListOf(),
+            object : ProdukAdapter.onClickListenerProduk{
+                override fun deleteProduk(tbMenu: TB_MENU) {
+                    hps(tbMenu)
+                }
+
+                override fun updateProduk(tbMenu: TB_MENU) {
+                }
+
+            }
         )
         binding.rcProduk.adapter = adapter
         binding.rcProduk.layoutManager = LinearLayoutManager(applicationContext, VERTICAL, false)
@@ -51,6 +64,27 @@ class produk : AppCompatActivity() {
             startActivity(Intent(this, Insert_menu::class.java))
         }
 
+    }
+
+    private fun hps(tbMenu: TB_MENU) {
+        val dialog = AlertDialog.Builder(this)
+        dialog.apply {
+            setTitle("Konfirmasi hapus data")
+            setMessage("apakah anda yakin akan menghapus data ${tbMenu.nama_menu} ini ?")
+            setNegativeButton("batal") { dilogInterface: DialogInterface, i: Int ->
+                dilogInterface.dismiss()
+            }
+            setPositiveButton("hapus") { dialogInterface: DialogInterface, i: Int ->
+                dialogInterface.dismiss()
+
+                CoroutineScope(Dispatchers.IO).launch {
+                    db.dao_cafe().DeleteDataM(tbMenu)
+                    finish()
+                    startActivity(intent)
+                }
+            }
+            dialog.show()
+        }
     }
 
     override fun onResume() {

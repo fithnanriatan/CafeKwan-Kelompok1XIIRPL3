@@ -43,7 +43,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtWelcome">
 
             <EditText
-                android:id="@+id/txtnamamenu"
+                android:id="@+id/Edtnamamenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="16dp"
@@ -57,7 +57,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/txthargamenu"
+                android:id="@+id/Edthargamenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="16dp"
@@ -66,11 +66,11 @@
                 android:inputType="textPersonName"
                 android:hint="harga menu"
                 android:textColor="#2C6E49"
-                app:layout_constraintStart_toStartOf="@+id/txtnamamenu"
-                app:layout_constraintTop_toBottomOf="@+id/txtnamamenu" />
+                app:layout_constraintStart_toStartOf="@+id/Edtnamamenu"
+                app:layout_constraintTop_toBottomOf="@+id/Edtnamamenu" />
 
             <EditText
-                android:id="@+id/txtstatusmenu"
+                android:id="@+id/Edtstatusmenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="16dp"
@@ -79,11 +79,11 @@
                 android:inputType="textPersonName"
                 android:hint="status menu"
                 android:textColor="#2C6E49"
-                app:layout_constraintStart_toStartOf="@+id/txthargamenu"
-                app:layout_constraintTop_toBottomOf="@+id/txthargamenu" />
+                app:layout_constraintStart_toStartOf="@+id/Edthargamenu"
+                app:layout_constraintTop_toBottomOf="@+id/Edthargamenu" />
 
             <EditText
-                android:id="@+id/txtdeskrpsimenu"
+                android:id="@+id/Edtdeskrpsimenu"
                 android:layout_width="250dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="16dp"
@@ -92,8 +92,8 @@
                 android:inputType="textPersonName"
                 android:hint="deskripsi menu"
                 android:textColor="#2C6E49"
-                app:layout_constraintStart_toStartOf="@+id/txtstatusmenu"
-                app:layout_constraintTop_toBottomOf="@+id/txtstatusmenu" />
+                app:layout_constraintStart_toStartOf="@+id/Edtstatusmenu"
+                app:layout_constraintTop_toBottomOf="@+id/Edtstatusmenu" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -126,7 +126,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imgKembali"
+        android:id="@+id/backUpdatemenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

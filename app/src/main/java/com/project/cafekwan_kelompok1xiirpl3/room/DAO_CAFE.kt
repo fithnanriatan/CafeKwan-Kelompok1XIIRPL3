@@ -9,7 +9,7 @@ interface DAO_CAFE {
     @Delete
     fun DeleteDataM(vararg tbMenu: TB_MENU)
     @Update
-    fun UpdateData(vararg tbMenu: TB_MENU)
+    fun UpdateDatam(vararg tbMenu: TB_MENU)
     @Query ("SELECT * FROM MENU")
     fun getAllData() : List<TB_MENU>
     @Query ("SELECT * FROM MENU WHERE kode_menu=:id")
