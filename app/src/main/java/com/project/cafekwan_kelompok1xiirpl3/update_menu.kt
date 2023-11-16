@@ -21,13 +21,12 @@ class update_menu : AppCompatActivity() {
             onBackPressed()
         }
         val id = intent.getStringExtra("kode menu").toString().toInt()
-        val data = db.dao_cafe().getID(id)
+        val data = db.dao_cafe().getID(id)[0]
 
-        0
-        binding.Edtnamamenu.setText(data[0].nama_menu)
-        binding.Edthargamenu.setText(data[0].harga_menu.toString())
-        binding.Edtstatusmenu.setText(data[0].status_menu)
-        binding.Edtdeskrpsimenu.setText(data[0].deskripsi_menu)
+        binding.Edtnamamenu.setText(data.nama_menu)
+        binding.Edthargamenu.setText(data.harga_menu.toString())
+        binding.Edtstatusmenu.setText(data.status_menu)
+        binding.Edtdeskrpsimenu.setText(data.deskripsi_menu)
 
         binding.btnUbahProduk.setOnClickListener{
             if (binding.Edtnamamenu.text.isNotEmpty()&&
@@ -37,17 +36,15 @@ class update_menu : AppCompatActivity() {
 
                 // update menu
                 db.dao_cafe().UpdateDatam(TB_MENU(
-                    0,
+                    data.kode_menu,
                     binding.Edtnamamenu.text.toString(),
                     binding.Edthargamenu.text.toString().toInt(),
                     binding.Edtstatusmenu.text.toString(),
                     0,
                     binding.Edtdeskrpsimenu.text.toString()
                 ))
-                startActivity(
-                    Intent(this,produk::class.java))
+                onBackPressed()
                 Toast.makeText(applicationContext,"Data berhasil diubah", Toast.LENGTH_SHORT).show()
-
 
             } else{
                 Toast.makeText(applicationContext, "ubah data terlebih dahulu", Toast.LENGTH_SHORT).show()
