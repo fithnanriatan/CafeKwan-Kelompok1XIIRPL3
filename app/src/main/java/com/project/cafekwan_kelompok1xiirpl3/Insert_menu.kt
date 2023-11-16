@@ -63,11 +63,7 @@ class Insert_menu : AppCompatActivity() {
                     )
                 )
 
-                startActivity(
-                    Intent(
-                        this, produk::class.java
-                    )
-                )
+                onBackPressed()
 
             }else {
                 Toast.makeText(applicationContext,"masukan text dulu lol",
@@ -75,7 +71,7 @@ class Insert_menu : AppCompatActivity() {
             }
         }
         binding.imgKembali.setOnClickListener{
-            startActivity(Intent(this,produk::class.java))
+            onBackPressed()
         }
     }
 }
