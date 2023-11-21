@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Insert_menu">
 
     <View
@@ -49,9 +50,10 @@
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/dark_green"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="kode menu"
+                android:inputType="textPersonName"
                 android:textColor="#2C6E49"
+                android:textColorHint="#2C6E49"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -63,9 +65,10 @@
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/dark_green"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="nama menu"
+                android:inputType="textPersonName"
                 android:textColor="#2C6E49"
+                android:textColorHint="#2C6E49"
                 app:layout_constraintStart_toStartOf="@+id/txtkodemenu"
                 app:layout_constraintTop_toBottomOf="@+id/txtkodemenu" />
 
@@ -76,9 +79,10 @@
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/dark_green"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="harga menu"
+                android:inputType="textPersonName"
                 android:textColor="#2C6E49"
+                android:textColorHint="#2C6E49"
                 app:layout_constraintStart_toStartOf="@+id/txtnamamenu"
                 app:layout_constraintTop_toBottomOf="@+id/txtnamamenu" />
 
@@ -103,9 +107,10 @@
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/dark_green"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="deskripsi menu"
+                android:inputType="textPersonName"
                 android:textColor="#2C6E49"
+                android:textColorHint="#2C6E49"
                 app:layout_constraintStart_toStartOf="@+id/txtsttsmenu"
                 app:layout_constraintTop_toBottomOf="@+id/txtsttsmenu" />
 

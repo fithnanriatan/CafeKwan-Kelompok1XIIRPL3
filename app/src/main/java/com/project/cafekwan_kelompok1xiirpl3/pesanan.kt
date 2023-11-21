@@ -71,7 +71,7 @@ class pesanan : AppCompatActivity() {
         val dialog = AlertDialog.Builder(this)
         dialog.apply {
             setTitle("Konfirmasi hapus data")
-            setMessage("apakah anda yakin akan menghapus data ini ${tbPesanan.nama_produk}?")
+            setMessage("apakah anda yakin akan menghapus pesanan ${tbPesanan.nama_produk} ini ?")
             setNegativeButton("batal") { dilogInterface: DialogInterface, i: Int ->
                 dilogInterface.dismiss()
             }

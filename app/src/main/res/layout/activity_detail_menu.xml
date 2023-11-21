@@ -170,6 +170,8 @@
                 android:inputType="number"
                 android:text="1"
                 android:textAlignment="center"
+                android:textColor="#2C6E49"
+                android:textColorHint="#2C6E49"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
