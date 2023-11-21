@@ -52,6 +52,7 @@ class Insert_menu : AppCompatActivity() {
                     selectedItem !=="Pilih Status" &&
                     binding.txtdskpsimenu.text.isNotEmpty()
             ){
+                //tambah data
                 database.dao_cafe().InserData(
                     TB_MENU(
                         binding.txtkodemenu.text.toString().toInt(),

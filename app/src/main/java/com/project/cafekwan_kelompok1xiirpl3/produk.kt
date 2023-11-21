@@ -45,7 +45,7 @@ class produk : AppCompatActivity() {
         binding.dasboard.setOnClickListener {
             onBackPressed()
         }
-
+        //menampilkan function dari adapter
         adapter = ProdukAdapter(arrayListOf(),
             object : ProdukAdapter.onClickListenerProduk{
                 override fun deleteProduk(tbMenu: TB_MENU) {
@@ -57,6 +57,7 @@ class produk : AppCompatActivity() {
 
             }
         )
+        //menampilkan data
         binding.rcProduk.adapter = adapter
         binding.rcProduk.layoutManager = LinearLayoutManager(applicationContext, VERTICAL, false)
         binding.rcProduk.addItemDecoration(DividerItemDecoration(applicationContext, VERTICAL))

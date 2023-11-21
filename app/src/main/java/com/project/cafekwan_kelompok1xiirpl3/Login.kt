@@ -19,6 +19,7 @@ class Login : AppCompatActivity() {
         setContentView(binding.root)
 
         database = DB_CAFE.getInstance(applicationContext)
+        // variabel username
         val username = binding.logUsername
         val password = binding.logPasword
         val pw = binding.logPasword.text.split("\\s+".toRegex())

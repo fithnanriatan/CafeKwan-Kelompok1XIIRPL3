@@ -47,7 +47,7 @@ class ProdukAdapter(private val list: ArrayList<TB_MENU>,private val listener:on
         holder.harga.text = list[position].harga_menu.toString()
         holder.status.text = list[position].status_menu
 
-
+        //memperkenalkan variabel & perpindahan
         holder.ubahpsnan.setOnClickListener{
             val context = holder.itemView.context
             context.startActivity(

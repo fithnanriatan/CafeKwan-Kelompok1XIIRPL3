@@ -63,6 +63,7 @@ class pesanan : AppCompatActivity() {
         }
         binding.dasboard.setOnClickListener {
             onBackPressed()
+            startActivity(Intent(this, DasboardActivity::class.java))
         }
     }
 

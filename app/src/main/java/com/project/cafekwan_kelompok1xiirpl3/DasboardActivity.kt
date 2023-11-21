@@ -20,7 +20,7 @@ class DasboardActivity : AppCompatActivity() {
 
         binding.txtWelcome.text = username
         
-        binding.navbarProduk.setOnClickListener {
+        binding.produk.setOnClickListener {
             val intent = Intent(this, produk::class.java)
             startActivity(intent)
         }

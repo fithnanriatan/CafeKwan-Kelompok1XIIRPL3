@@ -139,7 +139,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/bg_detail3"
-        android:elevation="24dp"
+        android:elevation="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
@@ -149,12 +149,12 @@
             android:id="@+id/constraintLayout3"
             android:layout_width="123dp"
             android:layout_height="33dp"
-            android:layout_marginEnd="36dp"
             android:background="@drawable/bg_detail5"
             app:layout_constraintBottom_toBottomOf="@+id/btn_buatPesanan"
             app:layout_constraintEnd_toStartOf="@+id/btn_buatPesanan"
-            app:layout_constraintTop_toTopOf="@+id/btn_buatPesanan"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_buatPesanan">
 
 
             <EditText
@@ -167,8 +167,8 @@
                 android:layout_marginBottom="6dp"
                 android:background="@color/white"
                 android:ems="10"
-                android:text="1"
                 android:inputType="number"
+                android:text="1"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -209,9 +209,9 @@
             android:layout_height="52dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bg_detail6"
-            android:textColor="@color/white"
-            android:text="buat pesanan"
             android:onClick="ttlHrg"
+            android:text="buat pesanan"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
